@@ -63,6 +63,7 @@ const SuccessStories = () => {
           width={20}
           height={20}
           className="w-20 h-20 object-cover rounded-full"
+          unoptimized
         />
         <div>
           <h3 className="text-xl font-semibold text-gray-800">
@@ -191,7 +192,7 @@ const SuccessStories = () => {
           age={34}
           quote="This program gave me the second chance I never thought I'd get."
           achievement="After 5 years of incarceration, James secured stable housing and full-time employment within 3 months of release."
-          imageSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          imageSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
           tags={["Housing Support", "Employment"]}
         />
 
@@ -200,7 +201,7 @@ const SuccessStories = () => {
           age={29}
           quote="For the first time in years, I have hope for my future."
           achievement="After experiencing homelessness for 2 years, Sarah completed vocational training and now works as a healthcare assistant."
-          imageSrc="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          imageSrc="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
           tags={["Education", "Career Development"]}
         />
 
@@ -209,7 +210,7 @@ const SuccessStories = () => {
           age={42}
           quote="The mentorship program changed my perspective on what's possible for me."
           achievement="Michael reconnected with his family, completed addiction recovery, and now mentors others in similar situations."
-          imageSrc="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          imageSrc="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
           tags={["Family Reunification", "Mentorship"]}
         />
 
@@ -218,7 +219,7 @@ const SuccessStories = () => {
           age={31}
           quote="Having stable housing meant I could finally focus on rebuilding my life."
           achievement="Alicia completed her GED while in transitional housing and is now pursuing an associate's degree."
-          imageSrc="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=822&q=80"
+          imageSrc="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
           tags={["Education", "Housing Support"]}
         />
 
@@ -227,7 +228,7 @@ const SuccessStories = () => {
           age={38}
           quote="The skills I learned helped me become financially independent for the first time."
           achievement="David started his own landscaping business after completing the entrepreneurship program."
-          imageSrc="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=848&q=80"
+          imageSrc="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
           tags={["Entrepreneurship", "Financial Literacy"]}
         />
 
@@ -236,7 +237,7 @@ const SuccessStories = () => {
           age={26}
           quote="Having a support network made all the difference in my recovery journey."
           achievement="Taylor has maintained sobriety for 18 months and now has custody of her children again."
-          imageSrc="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+          imageSrc="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
           tags={["Family Reunification", "Recovery Support"]}
         />
       </motion.div>
