@@ -26,9 +26,9 @@ function Footer() {
   );
 
   return (
-    <footer>
+    <footer className="bg-primary">
       {/* Main Footer Section */}
-      <div className="bg-primary grid smd:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 px-5 py-16 md:px-9 slg:px-12 xl:px-[74px]">
+      <div className="max-w-[1440px] mx-auto flex flex-col flex-wrap xl:justify-between smd:flex-row gap-10 xl:gap-16 px-5 py-16 md:px-9 slg:px-12 xl:px-[74px]">
         {/* Logo and Social Media */}
         <div className="w-full smd:max-w-[350px]">
           <Image
@@ -80,7 +80,7 @@ function Footer() {
         </div>
 
         {/* Quick Links (Split into Two Columns) */}
-        <div>
+        <div className="flex-shrink">
           <h4 className="text-xl font-bold mb-6">Quick Links</h4>
           <div className="flex gap-8 md:gap-10 xl:gap-20">
             <div>
@@ -115,12 +115,12 @@ function Footer() {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="space-y-5">
+        <div className="space-y-5 flex-shrink-0">
           <h4 className="text-xl font-bold">Subscribe</h4>
           <p className="text-sm">
             Stay updated with our latest news and opportunities.
           </p>
-          <div className="rounded-full overflow-hidden flex w-full sxl:w-[350px] shadow-md">
+          <div className="rounded-full overflow-hidden flex w-full sm:w-[350px] shadow-md">
             <input
               type="email"
               placeholder="Email Address"
