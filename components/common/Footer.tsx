@@ -1,15 +1,16 @@
 "use client";
-
 import React from "react";
 import Link from "next/link";
+import { Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
+import Button from "./Button";
+import SocialMedia from "../contact/SocialMedia";
 import Image from "next/image";
 
-function Footer() {
-  // Navigation links (same as the Nav component)
+const Footer = () => {
+  // Navigation links
   const footerLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
     { href: "/get-involved", label: "Get Involved" },
     { href: "/resources", label: "Resources" },
     { href: "/contact", label: "Contact" },
@@ -26,7 +27,7 @@ function Footer() {
   );
 
   return (
-    <footer className="bg-primary">
+    <footer className="bg-primary border-t border-gray-200">
       {/* Main Footer Section */}
       <div className="max-w-[1440px] mx-auto flex flex-col flex-wrap xl:justify-between smd:flex-row gap-10 xl:gap-16 px-5 py-16 md:px-9 slg:px-12 xl:px-[74px]">
         {/* Logo and Social Media */}
@@ -34,54 +35,63 @@ function Footer() {
           <Image
             src={"/img/logo.png"}
             alt="logo"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             className="object-contain"
           />
+          <div className="text-2xl font-bold text-green-700">
+            Restore Policy
+          </div>
 
-          <p className="text-[14px] my-4">
+          <p className="text-sm my-4 text-gray-700">
             Restore Policy is dedicated to empowering individuals who have faced
             incarceration or homelessness. We provide the tools, resources, and
             support needed to rebuild lives with dignity and purpose.
           </p>
 
-          <p className="font-bold text-[20px] mb-3">Follow Us</p>
-          <div className="flex gap-[18px] items-center">
-            {[
-              {
-                icon: "/svg/instagram.svg",
-                href: "https://www.instagram.com/",
-              },
-              {
-                icon: "/svg/linkedln.svg",
-                href: "https://www.linkedin.com/",
-              },
-              {
-                icon: "/svg/facebook.svg",
-                href: "https://www.facebook.com/",
-              },
-              { icon: "/svg/x.svg", href: "https://x.com/" },
-            ].map((social, index) => (
-              <Link
-                key={index}
-                href={social.href}
-                className="size-[40px] flex justify-center items-center p-2 bg-dark_primary rounded-full shadow-sm hover:shadow-md hover:-translate-y-[2px] transition-all"
-              >
-                <Image
-                  src={social.icon}
-                  alt={social.icon.split("/").pop()?.split(".")[0] || "icon"}
-                  width={20}
-                  height={20}
-                  className="w-5 h-5"
-                />
-              </Link>
-            ))}
+          <p className="font-bold text-lg mb-3">Follow Us</p>
+          <div className="flex gap-3 items-center">
+            <SocialMedia
+              icon="/placeholder.svg"
+              link="https://www.instagram.com/"
+              alt="Instagram"
+              className="w-10 h-10"
+            >
+              <Instagram className="text-green-600" />
+            </SocialMedia>
+
+            <SocialMedia
+              icon="/placeholder.svg"
+              link="https://www.linkedin.com/"
+              alt="LinkedIn"
+              className="w-10 h-10"
+            >
+              <Linkedin className="text-green-600" />
+            </SocialMedia>
+
+            <SocialMedia
+              icon="/placeholder.svg"
+              link="https://www.facebook.com/"
+              alt="Facebook"
+              className="w-10 h-10"
+            >
+              <Facebook className="text-green-600" />
+            </SocialMedia>
+
+            <SocialMedia
+              icon="/placeholder.svg"
+              link="https://twitter.com/"
+              alt="Twitter"
+              className="w-10 h-10"
+            >
+              <Twitter className="text-green-600" />
+            </SocialMedia>
           </div>
         </div>
 
         {/* Quick Links (Split into Two Columns) */}
         <div className="flex-shrink">
-          <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+          <h4 className="text-xl font-bold mb-6 text-green-700">Quick Links</h4>
           <div className="flex gap-8 md:gap-10 xl:gap-20">
             <div>
               <ul className="space-y-3">
@@ -89,7 +99,7 @@ function Footer() {
                   <li key={href}>
                     <Link
                       href={href}
-                      className="text-[14px] hover:text-[#3d7743] font-medium transition-colors"
+                      className="text-sm hover:text-green-700 font-medium transition-colors"
                     >
                       {label}
                     </Link>
@@ -103,7 +113,7 @@ function Footer() {
                   <li key={href}>
                     <Link
                       href={href}
-                      className="text-[14px] hover:text-[#3d7743] font-medium transition-colors"
+                      className="text-sm hover:text-green-700 font-medium transition-colors"
                     >
                       {label}
                     </Link>
@@ -116,8 +126,8 @@ function Footer() {
 
         {/* Newsletter Subscription */}
         <div className="space-y-5 flex-shrink-0">
-          <h4 className="text-xl font-bold">Subscribe</h4>
-          <p className="text-sm">
+          <h4 className="text-xl font-bold text-green-700">Subscribe</h4>
+          <p className="text-sm text-gray-700">
             Stay updated with our latest news and opportunities.
           </p>
           <div className="rounded-full overflow-hidden flex w-full sm:w-[350px] shadow-md">
@@ -140,11 +150,12 @@ function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-[#8fb993] p-3 text-center text-sm">
-        Copyright © 2025 Restore Policy. All Rights Reserved.
+      <div className="bg-green-600/20 p-3 text-center text-sm text-gray-700">
+        Copyright © {new Date().getFullYear()} Restore Policy. All Rights
+        Reserved.
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

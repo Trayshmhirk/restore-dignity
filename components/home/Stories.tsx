@@ -20,14 +20,14 @@ function Card({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.5, delay }}
+      transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.03, boxShadow: "0 10px 25px rgba(0,0,0,0.1)" }}
       className="flex gap-3 bg-white h-full p-5 rounded-[10px] shadow-lg"
     >
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.3, delay: delay + 0.2 }}
+        transition={{ duration: 0.3 }}
         viewport={{ once: true }}
       >
         <Icon className="stroke-[#2b7a33] stroke-2 size-8" />
@@ -37,7 +37,7 @@ function Card({
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: delay + 0.3 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
             className="font-semibold"
           >
@@ -46,7 +46,7 @@ function Card({
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: delay + 0.4 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
             className="text-sm"
           >
@@ -64,11 +64,11 @@ const Stories = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.2,
         duration: 0.5,
       },
     }),
   };
+
   return (
     <section className="bg-primary overflow-hidden">
       <div className="max-w-[1300px] m-auto px-5 md:px-9 slg:px-12 lg:px-[74px] py-10">

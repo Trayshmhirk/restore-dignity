@@ -207,19 +207,22 @@ const Services = () => {
                 name: "John Doe",
                 testimonial:
                   "Restore Policy helped me find stable housing and a job after my release. I’m forever grateful!",
-                image: "/testimonial1.jpg",
+                image:
+                  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
               },
               {
                 name: "Jane Smith",
                 testimonial:
                   "The mentorship program gave me the confidence to rebuild my life. Thank you!",
-                image: "/testimonial2.jpg",
+                image:
+                  "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
               },
               {
                 name: "Michael Brown",
                 testimonial:
                   "I was homeless, but now I have a home and a community that supports me.",
-                image: "/testimonial3.jpg",
+                image:
+                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
               },
             ].map((testimonial, i) => (
               <motion.div
@@ -233,9 +236,10 @@ const Services = () => {
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  width={100}
-                  height={100}
-                  className="rounded-full mx-auto mb-4"
+                  width={20}
+                  height={20}
+                  className="w-20 h-20 rounded-full object-cover  mx-auto mb-4"
+                  unoptimized
                 />
                 <p className="text-gray-700 italic mb-4">
                   &quot;{testimonial.testimonial}&quot;

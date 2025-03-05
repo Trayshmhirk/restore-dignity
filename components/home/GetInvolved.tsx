@@ -11,7 +11,6 @@ import {
 import React from "react";
 import { motion } from "framer-motion";
 import GetInvolvedCard from "../cards/GetInvolvedCard";
-// Card component with animations
 
 const GetInvolved = () => {
   // Container animations
@@ -34,20 +33,59 @@ const GetInvolved = () => {
       transition: { duration: 0.6, ease: "easeOut" },
     },
   };
+
+  // Decorative elements
+  const circleVariants = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 0.1,
+      transition: {
+        duration: 1.2,
+        ease: "easeOut",
+        delay: 0.3,
+      },
+    },
+  };
+
   return (
     <motion.div
-      className="max-w-[1300px] flex flex-col gap-10 m-auto px-5 md:px-9 slg:px-12 lg:px-[74px] py-20"
+      className="max-w-[1300px] flex flex-col gap-10 m-auto px-5 md:px-9 slg:px-12 lg:px-[74px] py-20 relative overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
     >
-      <motion.h3
-        className="text-[26px] font-bold mb-2 text-center"
+      {/* Decorative elements */}
+      <motion.div
+        className="absolute top-20 -left-20 w-64 h-64 rounded-full bg-green-500/10 -z-10"
+        variants={circleVariants}
+      />
+      <motion.div
+        className="absolute bottom-40 -right-20 w-80 h-80 rounded-full bg-green-600/10 -z-10"
+        variants={circleVariants}
+        transition={{ delay: 0.5 }}
+      />
+
+      <motion.div
+        className="flex flex-col items-center"
         variants={titleVariants}
       >
-        Get Involved in Creating Change
-      </motion.h3>
+        <motion.h3
+          className="text-[26px] font-bold mb-2 text-center"
+          variants={titleVariants}
+        >
+          Get Involved in Creating Change
+        </motion.h3>
+        <motion.div
+          className="w-20 h-1 bg-green-600 mt-1 mb-2"
+          initial={{ width: 0 }}
+          whileInView={{ width: 80 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+        />
+      </motion.div>
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-start">
         <GetInvolvedCard
           header="Support Change"
