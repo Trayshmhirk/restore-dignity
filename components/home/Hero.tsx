@@ -61,7 +61,7 @@ const Hero = () => {
             className="relative overflow-hidden rounded-3xl"
           >
             <motion.div
-              className="absolute inset-0 bg-green-600/20 z-10 rounded-3xl"
+              className="absolute inset-0 z-10 rounded-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
