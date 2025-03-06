@@ -93,7 +93,7 @@ const Stories = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1300px] m-auto px-5 md:px-9 slg:px-12 lg:px-[74px] py-20">
+      {/* <div className="max-w-[1300px] m-auto px-5 md:px-9 slg:px-12 lg:px-[74px] py-20">
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -166,7 +166,7 @@ const Stories = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
