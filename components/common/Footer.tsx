@@ -2,7 +2,6 @@
 import React from "react";
 import Link from "next/link";
 import { Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
-import Button from "./Button";
 import SocialMedia from "../contact/SocialMedia";
 import Image from "next/image";
 
@@ -14,7 +13,7 @@ const Footer = () => {
     { href: "/get-involved", label: "Get Involved" },
     { href: "/resources", label: "Resources" },
     { href: "/contact", label: "Contact" },
-    { href: "/success-stories", label: "Success Stories" },
+    // { href: "/success-stories", label: "Success Stories" },
   ];
 
   // Split links into two columns

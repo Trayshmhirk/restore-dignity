@@ -263,7 +263,7 @@ const GetInvolvedPage = () => {
           </motion.div>
 
           <motion.div
-            className="grid md:grid-cols-3 gap-8 mb-16"
+            className="grid md:grid-cols-3 gap-8"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -288,7 +288,7 @@ const GetInvolvedPage = () => {
             ))}
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className="text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -300,7 +300,7 @@ const GetInvolvedPage = () => {
                 Read Success Stories
               </Button>
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

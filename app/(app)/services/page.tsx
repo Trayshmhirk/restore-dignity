@@ -187,7 +187,7 @@ const Services = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-[#F7FAF8] py-20 px-5 md:px-9 slg:px-12 lg:px-[74px]">
+      {/* <section className="bg-[#F7FAF8] py-20 px-5 md:px-9 slg:px-12 lg:px-[74px]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -251,7 +251,7 @@ const Services = () => {
             ))}
           </div>
         </motion.div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-dark_primary py-20 px-5 md:px-9 slg:px-12 lg:px-[74px] text-center">
