@@ -50,14 +50,14 @@ const Contact = () => {
       >
         <ContactCard
           title="Phone & Email"
-          value="(+1) 444-123-4567"
-          valuebottom="hello@restorepolicy.com"
+          value="020 8124 5017"
+          valuebottom="info@restoredignity.co.uk"
           icon={Phone}
         />
         <ContactCard
           title="Our Location"
-          value="123 Restoration Avenue, Suite 101"
-          valuebottom="San Francisco, CA 94110"
+          value="92 Livingston Street, Leicester"
+          valuebottom="LE3 0QY, England"
           icon={MapPin}
         />
         <ContactCard
