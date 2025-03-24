@@ -145,13 +145,14 @@ const Contact = () => {
         <div className="max-w-[1300px] mx-auto px-5 md:px-9 lg:px-[74px]">
           <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.347127962352!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858f020b0c28b9%3A0x4a501367f076aa1d!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1635180334567!5m2!1sen!2suk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.6605590739173!2d-1.1554673229558021!3d52.62997792808084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487760c3b6b710ef%3A0xf297666ca7b31df1!2s92%20Livingstone%20St%2C%20Leicester%20LE3%200QY%2C%20UK!5e0!3m2!1sen!2sng!4v1742806425883!5m2!1sen!2sng"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
-              title="Our location"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Livingston Street, Leicester"
             ></iframe>
           </div>
         </div>
