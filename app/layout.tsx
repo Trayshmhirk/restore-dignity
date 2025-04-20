@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NProgressBarProvider from "@/providers/NProgressBarProvider";
+import Provider from "@/providers/Providers";
 
 // import {
 //   poppins,
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={``} // ${poppins.variable} font-poppins ${libre_baskerville.variable} font-libre-baskerville ${public_sans.variable} font-public-sans ${inter.variable} ${open_sans.variable} ${roboto.variable}
       >
-        <NProgressBarProvider>{children}</NProgressBarProvider>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
