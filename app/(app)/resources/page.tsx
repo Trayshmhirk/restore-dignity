@@ -160,8 +160,9 @@ const Resources = () => {
             Need more support or have questions about our resources? Our team is
             here to help you navigate your journey.
           </p>
+
           <Link
-            href="#"
+            href={"mailto:info@restorediginty.co.uk"}
             className="inline-block px-6 py-3 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
           >
             Contact Support Team

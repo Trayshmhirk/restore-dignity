@@ -4,6 +4,7 @@ import React from "react";
 import { Home, Heart, Users, PhoneCall, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Services = () => {
   // Animation variants for the cards
@@ -186,73 +187,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      {/* <section className="bg-[#F7FAF8] py-20 px-5 md:px-9 slg:px-12 lg:px-[74px]">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, margin: "-100px" }}
-          className="max-w-[1300px] mx-auto text-center"
-        >
-          <h2 className="text-dark_primary text-xl font-bold tracking-[2px] uppercase mb-4">
-            Success Stories
-          </h2>
-          <p className="font-medium text-[36px] text-gray-800 mb-12">
-            Inspiring Stories of Transformation
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "John Doe",
-                testimonial:
-                  "Restore Dignity helped me find stable housing and a job after my release. I’m forever grateful!",
-                image:
-                  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-              },
-              {
-                name: "Jane Smith",
-                testimonial:
-                  "The mentorship program gave me the confidence to rebuild my life. Thank you!",
-                image:
-                  "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-              },
-              {
-                name: "Michael Brown",
-                testimonial:
-                  "I was homeless, but now I have a home and a community that supports me.",
-                image:
-                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-              },
-            ].map((testimonial, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: i * 0.2 }}
-                viewport={{ once: true, margin: "-50px" }}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
-              >
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  width={20}
-                  height={20}
-                  className="w-20 h-20 rounded-full object-cover  mx-auto mb-4"
-                  unoptimized
-                />
-                <p className="text-gray-700 italic mb-4">
-                  &quot;{testimonial.testimonial}&quot;
-                </p>
-                <p className="font-semibold text-gray-800">
-                  - {testimonial.name}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section> */}
-
       {/* CTA Section */}
       <section className="bg-dark_primary py-20 px-5 md:px-9 slg:px-12 lg:px-[74px] text-center">
         <motion.div
@@ -268,9 +202,11 @@ const Services = () => {
             Join us in empowering individuals to rebuild their lives. Your
             support can change lives.
           </p>
-          <button className="bg-white text-[#3d7743] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 mx-auto">
-            Get Involved <ArrowRight className="size-5" />
-          </button>
+          <Link href={"mailto:info@restorediginty.co.uk"}>
+            <button className="bg-white text-[#3d7743] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 mx-auto">
+              Get Involved <ArrowRight className="size-5" />
+            </button>
+          </Link>
         </motion.div>
       </section>
     </>

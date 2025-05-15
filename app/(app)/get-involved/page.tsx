@@ -87,7 +87,11 @@ const GetInvolvedPage = () => {
       )}
 
       <div className="mt-auto">
-        <Button className="text-white rounded-xl font-medium">{ctaText}</Button>
+        <Link href={"mailto:info@restorediginty.co.uk"}>
+          <Button className="text-white rounded-xl font-medium">
+            {ctaText}
+          </Button>
+        </Link>
       </div>
     </motion.div>
   );
@@ -128,15 +132,17 @@ const GetInvolvedPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-8 font-bold">
-                Volunteer Now
-              </Button>
-              <Button
-                // variant="outline"
-                className="bg-transparent border border-dark_primary hover:bg-primary text-dark_primary px-8 font-bold"
-              >
-                Make a Donation
-              </Button>
+              <Link href={"mailto:info@restorediginty.co.uk"}>
+                <Button className="bg-green-600 hover:bg-green-700 text-white px-8 font-bold">
+                  Volunteer Now
+                </Button>
+              </Link>
+
+              <Link href={"mailto:info@restorediginty.co.uk"}>
+                <Button className="bg-transparent border border-dark_primary hover:bg-primary text-dark_primary px-8 font-bold">
+                  Make a Donation
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -287,20 +293,6 @@ const GetInvolvedPage = () => {
               </motion.div>
             ))}
           </motion.div>
-
-          {/* <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Link href="/success-stories">
-              <Button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-8 rounded-lg text-base font-medium">
-                Read Success Stories
-              </Button>
-            </Link>
-          </motion.div> */}
         </div>
       </section>
 
@@ -320,11 +312,13 @@ const GetInvolvedPage = () => {
             Join our community of changemakers today. Every action, no matter
             how small, contributes to creating lasting change.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-dark_primary text-white hover:bg-primary hover:text-dark_primary px-8 rounded-lg text-base font-medium shadow-md">
-              Get Started Now
-            </Button>
-          </div>
+          <Link href={"mailto:info@restorediginty.co.uk"}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-dark_primary text-white hover:bg-primary hover:text-dark_primary px-8 rounded-lg text-base font-medium shadow-md">
+                Get Started Now
+              </Button>
+            </div>
+          </Link>
         </div>
       </motion.section>
     </>
