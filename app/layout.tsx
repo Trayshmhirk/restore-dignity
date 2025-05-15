@@ -43,28 +43,11 @@ export const metadata: Metadata = {
     title: "Restore Dignity | Rebuilding Lives with Stability and Hope",
     description:
       "We support prison leavers and homeless individuals with essential resources, mentorship, and housing. Empowering sustainable recovery and reintegration into society.",
-    url: "https://www.restoredignity.org", // Change to your real domain
+    url: "https://www.restoredignitylimited.co.uk/", // Change to your real domain
     siteName: "Restore Dignity",
-    images: [
-      {
-        url: "/img/og-image.jpg", // Ensure this exists and is 1200x630 ideally
-        width: 1200,
-        height: 630,
-        alt: "Restore Dignity - Empowering Lives",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Restore Dignity",
-    description:
-      "Helping individuals rebuild their lives after homelessness or incarceration through compassionate recovery and support.",
-    images: ["/img/og-image.jpg"],
-    creator: "@restoredignity", // Optional: Your Twitter handle
-  },
-  metadataBase: new URL("https://www.restoredignity.org"), // Change if different
 };
 
 export default function RootLayout({
