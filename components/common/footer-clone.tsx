@@ -30,7 +30,7 @@ function Footer() {
               className="object-contain"
             />
             <p className="text-gray-600 text-sm">
-              Restore Policy is dedicated to empowering individuals who have
+              Restore Dignity is dedicated to empowering individuals who have
               faced incarceration or homelessness. We provide the tools,
               resources, and support needed to rebuild lives with dignity and
               purpose.
@@ -124,7 +124,7 @@ function Footer() {
       {/* Copyright Section */}
       <div className="bg-[#3d7743] py-4 text-center">
         <p className="text-sm text-white">
-          © {new Date().getFullYear()} Restore Policy. All Rights Reserved.
+          © {new Date().getFullYear()} Restore Dignity. All Rights Reserved.
         </p>
       </div>
     </footer>

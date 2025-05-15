@@ -75,9 +75,8 @@ const Statistics = () => {
   };
 
   // Counter values with animation
-  const individualsCount = useCounter(2500, 2500, 300);
-  const successRateCount = useCounter(85, 2000, 600);
-  const volunteersCount = useCounter(1200, 2200, 900);
+  const individualsCount = useCounter(40, 2500, 500);
+  const successRateCount = useCounter(80, 2000, 900);
 
   return (
     <section className="bg-[#EEF8F2] relative overflow-hidden">
@@ -121,14 +120,14 @@ const Statistics = () => {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 slg:gap-8"
+          className="grid md:grid-cols-2 gap-4 slg:gap-8 w-full max-w-2xl mx-auto"
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
           <motion.div
-            className="bg-white p-6 flex items-center gap-4 border border-primary rounded-xl"
+            className="w-full bg-white p-6 flex items-center gap-4 border border-primary rounded-xl"
             variants={item}
             whileHover={{
               y: -10,
@@ -153,7 +152,7 @@ const Statistics = () => {
           </motion.div>
 
           <motion.div
-            className="bg-white p-6 flex items-center gap-4 border border-primary rounded-xl"
+            className="w-full bg-white p-6 flex items-center gap-4 border border-primary rounded-xl"
             variants={item}
             whileHover={{
               y: -10,
@@ -172,31 +171,6 @@ const Statistics = () => {
             <div className="flex flex-col">
               <h3 className="text-3xl font-bold">{successRateCount}%</h3>
               <p className="text-sm text-gray-700">Success Rate</p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="bg-white p-6 flex items-center gap-4 border border-primary rounded-xl"
-            variants={item}
-            whileHover={{
-              y: -10,
-              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
-              transition: { duration: 0.2 },
-            }}
-          >
-            <motion.div
-              className="bg-[#EEF8F2] flex items-center justify-center p-4 rounded-md"
-              whileHover={{ rotate: 10 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <Handshake className="size-8 text-green-600" />
-            </motion.div>
-
-            <div className="flex flex-col">
-              <h3 className="text-3xl font-bold">
-                {volunteersCount.toLocaleString()}+
-              </h3>
-              <p className="text-sm text-gray-700">Community Volunteers</p>
             </div>
           </motion.div>
         </motion.div>

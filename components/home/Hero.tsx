@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../common/Button";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -38,7 +39,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              Restore Policy is dedicated to breaking the cycle of homelessness
+              Restore Dignity is dedicated to breaking the cycle of homelessness
               and reoffending by providing essential support, mentorship, and
               resources. Together, we empower individuals to reclaim their
               futures and reintegrate into society with confidence.
@@ -49,7 +50,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <Button>Donate now</Button>
+              <Link href={"mailto:info@restorediginty.co.uk"}>
+                <Button>Donate now</Button>
+              </Link>
             </motion.div>
           </motion.div>
 

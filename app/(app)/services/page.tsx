@@ -206,7 +206,7 @@ const Services = () => {
               {
                 name: "John Doe",
                 testimonial:
-                  "Restore Policy helped me find stable housing and a job after my release. I’m forever grateful!",
+                  "Restore Dignity helped me find stable housing and a job after my release. I’m forever grateful!",
                 image:
                   "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
               },

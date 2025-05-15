@@ -39,13 +39,14 @@ const Footer = () => {
             className="object-contain"
           />
           <div className="text-2xl font-bold text-green-700">
-            Restore Policy
+            Restore Dignity
           </div>
 
           <p className="text-sm my-4 text-gray-700">
-            Restore Policy is dedicated to empowering individuals who have faced
-            incarceration or homelessness. We provide the tools, resources, and
-            support needed to rebuild lives with dignity and purpose.
+            Restore Dignity is dedicated to empowering individuals who have
+            faced incarceration or homelessness. We provide the tools,
+            resources, and support needed to rebuild lives with dignity and
+            purpose.
           </p>
 
           <p className="font-bold text-lg mb-3">Follow Us</p>
@@ -150,7 +151,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="bg-green-600/20 p-3 text-center text-sm text-gray-700">
-        Copyright © {new Date().getFullYear()} Restore Policy. All Rights
+        Copyright © {new Date().getFullYear()} Restore Dignity. All Rights
         Reserved.
       </div>
     </footer>

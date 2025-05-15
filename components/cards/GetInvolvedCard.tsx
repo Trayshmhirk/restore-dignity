@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 interface GetInvolvedCardProps {
   header: string;
   subheader: string;
@@ -83,18 +84,20 @@ const GetInvolvedCard = ({
         </motion.div>
       </motion.div>
 
-      <motion.button
-        className={`w-full py-2 px-4 rounded-lg text-center font-medium ${
-          is_primary_button
-            ? "bg-green-600 text-white hover:bg-green-700"
-            : "border border-green-600 text-green-600 hover:bg-green-50"
-        }`}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        transition={{ type: "spring", stiffness: 400, damping: 17 }}
-      >
-        {button_text}
-      </motion.button>
+      <Link href={"mailto:info@restorediginty.co.uk"}>
+        <motion.button
+          className={`w-full py-2 px-4 rounded-lg text-center font-medium ${
+            is_primary_button
+              ? "bg-green-600 text-white hover:bg-green-700"
+              : "border border-green-600 text-green-600 hover:bg-green-50"
+          }`}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        >
+          {button_text}
+        </motion.button>
+      </Link>
     </motion.div>
   );
 };

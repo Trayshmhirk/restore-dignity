@@ -22,7 +22,7 @@ const About = () => {
             Who We Are
           </h1>
           <p className="text-gray-700 max-w-2xl mx-auto text-lg">
-            At Restore Policy, we are dedicated to empowering individuals who
+            At Restore Dignity, we are dedicated to empowering individuals who
             have faced incarceration or homelessness. Our mission is to provide
             the tools, resources, and support needed to rebuild lives with
             dignity and purpose.

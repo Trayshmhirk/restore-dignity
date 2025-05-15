@@ -208,6 +208,7 @@ const Mission = () => {
                   whileHover="hover"
                   transition={{ delay: 0.3 + i * 0.1 }}
                   viewport={{ once: true }}
+                  className="rounded-xl"
                 >
                   <Card className="h-full bg-[#EEF8F2] border-none shadow-sm transition-all duration-300">
                     <CardContent className="pt-6">
