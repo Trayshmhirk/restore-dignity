@@ -117,7 +117,7 @@ const MissionSection = () => {
                   viewport={{ once: true, margin: "-50px" }}
                 >
                   <p className="text-sm text-gray-500">People Helped</p>
-                  <p className="text-2xl font-bold text-dark_primary">2,500+</p>
+                  <p className="text-2xl font-bold text-dark_primary">175+</p>
                 </motion.div>
               </div>
             </motion.div>
@@ -155,7 +155,7 @@ const MissionSection = () => {
                   viewport={{ once: true, margin: "-50px" }}
                 >
                   <p className="text-sm text-gray-500">Volunteers</p>
-                  <p className="text-2xl font-bold text-dark_primary">1,200+</p>
+                  <p className="text-2xl font-bold text-dark_primary">25+</p>
                 </motion.div>
               </div>
             </motion.div>
