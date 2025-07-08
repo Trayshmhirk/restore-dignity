@@ -18,8 +18,8 @@ const dosis = Dosis({
 
 export const metadata: Metadata = {
   title: {
-    default: "Restore Dignity",
-    template: "%s - Restore Dignity",
+    default: "Restore Dignity C.I.C",
+    template: "%s - Restore Dignity C.I.C",
   },
   description:
     "Restore Dignity helps prison leavers and homeless individuals rebuild their lives through recovery, rehabilitation, and reintegration. We offer support programs, housing, mentorship, and employment pathways.",
