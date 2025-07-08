@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     title: "Restore Dignity | Rebuilding Lives with Stability and Hope",
     description:
       "We support prison leavers and homeless individuals with essential resources, mentorship, and housing. Empowering sustainable recovery and reintegration into society.",
-    url: "https://www.restoredignitylimited.co.uk/", // Change to your real domain
-    siteName: "Restore Dignity",
+    url: "https://www.restoredignitylimited.co.uk/",
+    siteName: "Restore Dignity C.I.C",
     locale: "en_US",
     type: "website",
   },
